@@ -1,7 +1,7 @@
 #  SmashCache
-## A simple caching and sweeping utility
+### A simple caching and sweeping utility
 
-## There are only two hard things in Computer Science: cache invalidation and naming things.   -Phil Karlton
+### There are only two hard things in Computer Science: cache invalidation and naming things.   -Phil Karlton
 
   After much research at the time I could not find a simple caching utility that handled sweeping in a good way (if at all).
   For better or worse, I opted to write my own and started with a sample file caching utility and updated it to use rails_cache and mem_cache.  
@@ -11,10 +11,9 @@
   When data is updated or created, I can use the generic restful endpoints to sweep all the necessary cached data - I generally put these sweep helper in a separate class.
 
 ## Example use:
+Include this Utility file somewhere, I put mine in lib/utility/smash_cache.rb  -- this example is structured around that
 
-  Include this file somewhere, I put mine in lib/utility/smash_cache.rb  -- this example is structured around that
-
-## Place in the config, and update the appropriate parent class to create these as config vars
+Place in the config, and update the appropriate parent class to create these as config vars
 
 ### environment config
     config.smash_cache.enabled = true
