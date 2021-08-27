@@ -1,14 +1,14 @@
  
-  #SmashCache
-  ##A simple caching and sweeping utility
+  # SmashCache
+  ## A simple caching and sweeping utility
   
-  ##There are only two hard things in Computer Science: cache invalidation and naming things.   -Phil Karlton
+  ## There are only two hard things in Computer Science: cache invalidation and naming things.   -Phil Karlton
   
   After much research at the time I could not find a simple caching utility that handled sweeping in a good way (if at all).
   
   For better or worse, I opted to write my own and started with a sample file caching utility and updated it to use rails_cache and mem_cache.  
   
-  ##Smash Cache allows individual and tag based sweeping, so you can basically cache an item with multiple keys.  
+  ## Smash Cache allows individual and tag based sweeping, so you can basically cache an item with multiple keys.  
   
   I use the tagging to save data under data id specific keys and under general keys to sweep/clear entire groups of cached items.
   
